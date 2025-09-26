@@ -1,7 +1,7 @@
 <header class="header" data-name="header" data-animation="fade">
     <div class="header__inner">
         <div class="header__mob-navigation">
-            <a href="/index.php" class="header__link header__link--mob" data-name="menu-logo">
+            <a href="/index.html" class="header__link header__link--mob" data-name="menu-logo">
                 <div class="header__logo">
                     <img src="../images/logo-skin.svg"/>
                 </div>
@@ -14,7 +14,7 @@
         </div>
         <div class="menu" data-name="menu-content">
             <div class="menu__inner">
-                <a href="/index.php" class="header__link">
+                <a href="/index.html" class="header__link">
                     <div class="header__logo">
                         <img src="../images/logo-skin.svg"/>
                     </div>
