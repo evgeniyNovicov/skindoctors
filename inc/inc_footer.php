@@ -86,7 +86,7 @@
                 <div class="footer__block" data-animation="fade">
                     <div class="footer__text footer__text--color">2025, Все права защищены</div>
                     <a href="#" class="footer__logo-bottom">
-                        <img src="../images/origami.svg" alt="logo">
+                        <img src="../images/origami.webp" alt="logo">
                         <div class="footer__text footer__text--color">Разработка и продвижение сайтов. Веб-студия Оригами</div>
                     </a>
                 </div>

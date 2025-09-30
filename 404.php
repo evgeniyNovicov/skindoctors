@@ -19,7 +19,7 @@
                 <div class="error__inner" data-animation="fade">
                     <h1 class="error__title">Sorry...</h1>
                     <div class="error__text">Что-то пошло не так..</div>
-                    <a href="/index.html" class="error__button">Вернуться на главную</a>
+                    <a href="/index.php" class="error__button">Вернуться на главную</a>
                 </div>
                 <img src="./images/bg-bg.png" alt="bg" class="error__bg">
             </div>

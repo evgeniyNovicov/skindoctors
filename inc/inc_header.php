@@ -1,20 +1,15 @@
 <header class="header" data-name="header" data-animation="fade">
     <div class="header__inner">
         <div class="header__mob-navigation">
-            <a href="/index.html" class="header__link header__link--mob" data-name="menu-logo">
+            <a href="/index.php" class="header__link header__link--mob" data-name="menu-logo">
                 <div class="header__logo">
                     <img src="../images/logo-skin.svg"/>
                 </div>
             </a>
-            <div class="burger" data-name="menu-intro">
-                <div class="burger__item"></div>
-                <div class="burger__item"></div>
-                <div class="burger__item"></div>
-            </div>
         </div>
         <div class="menu" data-name="menu-content">
             <div class="menu__inner">
-                <a href="/index.html" class="header__link">
+                <a href="/index.php" class="header__link">
                     <div class="header__logo">
                         <img src="../images/logo-skin.svg"/>
                     </div>
@@ -25,10 +20,10 @@
                     </li>
                     <li class="menu__item">
                         <div class="dropdown" data-name="dropdown">
-                            <div class="dropdown__header" data-name="dropdown-header">
+                            <div class="dropdown__header" data-name="dropdown-intro">
                                 <a href="./#" class="menu__link">каталог услуг</a>
                                 <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L9 9L17 1" stroke="#253D2E" stroke-linecap="round" />
+                                    <path d="M1 1L9 9L17 1" stroke="currentColor" stroke-linecap="round" />
                                 </svg>
                             </div>
                             <div class="dropdown__content" data-name="dropdown-content">
@@ -107,10 +102,10 @@
                     </li>
                     <li class="menu__item">
                         <div class="dropdown" data-name="dropdown">
-                            <div class="dropdown__header" data-name="dropdown-header">
+                            <div class="dropdown__header" data-name="dropdown-intro">
                                 <a href="./#" class="menu__link">магазин косметики</a>
                                 <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L9 9L17 1" stroke="#253D2E" stroke-linecap="round" />
+                                    <path d="M1 1L9 9L17 1" stroke="currentColor" stroke-linecap="round" />
                                 </svg>
                             </div>
                             <div class="dropdown__content" data-name="dropdown-content">
@@ -202,18 +197,23 @@
                         <a href="./contacts.php" class="menu__link">контакты</a>
                     </li>
                 </ul>
-                <div class="menu__panel">
-                    <form action="POST" class="search">
-                        <label class="search__label">
-                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 15.5L1 19.5M19 9.5C19 11.6217 18.1571 13.6566 16.6569 15.1569C15.1566 16.6571 13.1217 17.5 11 17.5C8.87827 17.5 6.84344 16.6571 5.34315 15.1569C3.84285 13.6566 3 11.6217 3 9.5C3 7.37827 3.84285 5.34344 5.34315 3.84315C6.84344 2.34285 8.87827 1.5 11 1.5C13.1217 1.5 15.1566 2.34285 16.6569 3.84315C18.1571 5.34344 19 7.37827 19 9.5Z" stroke="#959595" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <input type="text" name="search" data-name="search-input" class="search__input" placeholder="поиск">
-                        </label>
-                    </form>
-                    <button class="button" data-popup-button="contact">корзина</button>
-                </div>
             </div>
+        </div>
+        <div class="menu__panel">
+            <form action="POST" class="search">
+                <label class="search__label">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 15.5L1 19.5M19 9.5C19 11.6217 18.1571 13.6566 16.6569 15.1569C15.1566 16.6571 13.1217 17.5 11 17.5C8.87827 17.5 6.84344 16.6571 5.34315 15.1569C3.84285 13.6566 3 11.6217 3 9.5C3 7.37827 3.84285 5.34344 5.34315 3.84315C6.84344 2.34285 8.87827 1.5 11 1.5C13.1217 1.5 15.1566 2.34285 16.6569 3.84315C18.1571 5.34344 19 7.37827 19 9.5Z" stroke="#959595" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <input type="text" name="search" data-name="search-input" class="search__input" placeholder="поиск">
+                </label>
+            </form>
+            <button class="button" data-name="button-cart">корзина</button>
+        </div>
+        <div class="burger" data-name="menu-intro">
+            <div class="burger__item"></div>
+            <div class="burger__item"></div>
+            <div class="burger__item"></div>
         </div>
     </div>
 </header>

@@ -161,8 +161,7 @@ const initMap = () => {
 initMap();
 
 const initDropdown = () => {
-    const dropdowns = document.querySelectorAll('[data-name="dropdown-click"]');
-
+    const dropdowns = document.querySelectorAll('[data-name="dropdown"]');
     const closeAllDropdowns = () => {
         dropdowns.forEach((dropdown) => {
             const dropdownContent = dropdown?.querySelector('[data-name="dropdown-content"]');
@@ -177,7 +176,7 @@ const initDropdown = () => {
         const dropdownItems = dropdown?.querySelectorAll('[data-name="dropdown-item"]');
         const dropdownServiceResultInput = dropdown?.querySelector('[data-name="input-service-result"]');
 
-        if (!dropdown || !dropdownIntro || !dropdownContent || !dropdownHeaderText || !dropdownItems) {
+        if (!dropdown || !dropdownIntro || !dropdownContent) {
             return;
         }
         const chooseDropdown = (event) => {
@@ -189,7 +188,7 @@ const initDropdown = () => {
             dropdown?.classList.remove(CLASSES.ACTIVE);
         };
 
-        function setDropdown() {
+        function setDropdown(event) {
             event.stopPropagation();
             if (dropdown.classList.contains(CLASSES.ACTIVE)) {
                 dropdownContent?.classList.remove(CLASSES.ACTIVE);
@@ -201,9 +200,11 @@ const initDropdown = () => {
         };
 
         dropdownIntro?.addEventListener('click', setDropdown);
-        dropdownItems.forEach((item) => {
-            item.addEventListener('click', chooseDropdown);
-        });
+        if (dropdownItems.length) {
+            dropdownItems.forEach((item) => {
+                item.addEventListener('click', chooseDropdown);
+            });
+        }
     });
 
     document.addEventListener('click', (event) => {
@@ -251,13 +252,21 @@ const initMagazineSlider = () => {
                     bullets += `
                         <span class="swiper-pagination-bullet ${isActive ? 'swiper-pagination-bullet-active' : ''}" 
                               data-index="${i - 1}">
-                            ${String(i).padStart(2, '0')}
+                            ${String(i)}
                         </span>
                     `;
                 }
                 return bullets;
             }
         },
+        breakpoints: {
+            1280: {
+                slidesPerView: 2,
+            },
+            320: {
+                slidesPerView: 1,
+            }
+        }
     });
 };
 initMagazineSlider();
