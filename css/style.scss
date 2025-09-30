@@ -24,6 +24,7 @@ body {
   position: relative;
   z-index: 3;
 }
+
 .main.main-hidden{
   max-width: 100vw;
   overflow: hidden;
@@ -54,6 +55,11 @@ body.js--scrolled{
     @media(max-width: 1280px) {
       margin-top: 2.5rem;
     }
+  }
+}
+.breadcrumbs + .main{
+  .section:first-child{
+    padding-top: 2.5rem;
   }
 }
 .section.section--pb-lg{
@@ -153,11 +159,17 @@ body.js--scrolled{
   @media(max-width: 1280px){
     font-size: 1.25rem;
   }
+  @media(max-width: 767px){
+    font-size: 1.125rem;
+  }
 }
 .heading.heading--md{
   font-size: 1.875rem;
   @media(max-width: 1280px) {
     font-size: 1.5rem;
+  }
+  @media(max-width: 767px) {
+    font-size: 1.25rem;
   }
 }
 .heading.heading--light{
@@ -234,6 +246,9 @@ body.js--scrolled{
   }
   @media(max-width: 1280px) {
     padding: 0.8125rem 1.875rem;
+  }
+  @media(max-width: 767px) {
+    padding: 0.8125rem 1.25rem;
   }
 }
 .button.button--light{
@@ -433,19 +448,21 @@ body.js--scrolled{
   }
 }
 .breadcrumbs{
-  display: flex;
-  align-items: center;
-  column-gap: 0.5rem;
-  margin-bottom: 1.875rem;
-  flex-wrap: wrap;
-  line-height: 130%;
-  @media(max-width: 767px) {
-    margin-bottom: 1.625rem;
+  padding-top: 9.375rem;
+  .breadcrumbs__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    flex-wrap: wrap;
+    line-height: 130%;
+    @media(max-width: 767px) {
+      margin-bottom: 1.625rem;
+    }
   }
   &__link{
     font-weight: 300;
     font-size: 1.25rem;
-    color: #948c81;
+    color:  #b7bdb7;
     transition: .3s all;
     @media(max-width: 1440px) {
       font-size: 1rem;
@@ -457,12 +474,13 @@ body.js--scrolled{
   &__text{
     font-weight: 400;
     font-size: 1.25rem;
-    color: #0b1e46;
+    color:  #b7bdb7;
     @media(max-width: 1440px) {
       font-size: 1rem;
     }
   }
 }
+
 .tooltip{
   position: relative;
   &__inner{
@@ -621,6 +639,9 @@ body.js--scrolled{
   align-items: center;
   gap: 1.25rem;
   margin-bottom: 2.125rem;
+  @media(max-width: 767px) {
+    margin-bottom: 1.625rem;
+  }
 }
 .search{
   @media(max-width: 1280px){
@@ -632,6 +653,10 @@ body.js--scrolled{
   @media(max-width: 991px){
     width: 14.375rem;
     min-width: 14.375rem;
+  }
+  @media(max-width: 767px) {
+    width:auto;
+    min-width: auto;
   }
   &__label{
     display: flex;
@@ -655,6 +680,9 @@ body.js--scrolled{
     @media(max-width: 1279px){
       height: 100%;
       width: 100%;
+    }
+    @media(max-width: 767px) {
+      display: none;
     }
     svg{
       width: 1.25rem;
@@ -683,6 +711,13 @@ body.js--scrolled{
   &__input.js--active{
     color: var(--color-text-light);
   }
+  &__link{
+    display: none;
+    @media(max-width: 767px) {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
 // ELEMENTS END
 
@@ -704,6 +739,12 @@ body.js--scrolled{
     z-index: 2;
     @media(max-width: 1280px) {
       max-width: 27rem;
+    }
+    @media(max-width: 767px) {
+      .heading{
+        text-align: center;
+        line-height: 95%;
+      }
     }
   }
   &__body{
@@ -799,6 +840,13 @@ body.js--scrolled{
     @media(max-width: 1280px) {
       max-width: 26.125rem;
     }
+    @media(max-width: 767px) {
+      .paragraph{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+    }
   }
   &__footer{
     display: flex;
@@ -828,7 +876,11 @@ body.js--scrolled{
     @media(max-width: 767px) {
       display: flex;
       flex-direction: column;
-      margin-top: 1.625rem;
+      margin-top: 2.5rem;
+      padding: 0.625rem;
+      .paragraph{
+        text-align: center;
+      }
     }
   }
   &__photo{
@@ -871,6 +923,9 @@ body.js--scrolled{
     display: flex;
     flex-direction: column;
     gap: 1.875rem;
+    @media(max-width: 767px) {
+      gap: 1rem;
+    }
   }
   &__picture{
     position: relative;
@@ -899,6 +954,9 @@ body.js--scrolled{
       width: 0;
       padding-right: 0.625rem;
       transition: .3s all;
+      @media(max-width: 767px){
+        padding-right: 0;
+      }
     }
   }
   &__link:hover{
@@ -983,6 +1041,9 @@ body.js--scrolled{
         padding: 0.125rem 0.625rem;
         margin-bottom: 2rem;
       }
+      @media(max-width: 767px){
+        margin-bottom: 1.5rem;
+      }
     }
     &__header.offers-item__header--bg{
       background-color: #cdbc9e;
@@ -992,6 +1053,9 @@ body.js--scrolled{
       font-size: 1.125rem;
       line-height: 150%;
       color: var(--color-button-text);
+      @media(max-width: 767px){
+        font-size: 1rem;
+      }
     }
     &__body{
       position: relative;
@@ -1010,6 +1074,9 @@ body.js--scrolled{
       @media(max-width: 1440px){
         font-size: 1.875rem;
         line-height: 100%;
+      }
+      @media(max-width: 767px){
+        font-size: 1.75rem;
       }
     }
     &__footer{
@@ -1134,6 +1201,9 @@ body.js--scrolled{
     display: flex;
     flex-direction: column;
   }
+  @media(max-width: 767px) {
+    row-gap: 1.5rem;
+  }
   &-card.shop-card--large{
     height: 100%;
     grid-area: 1 / 1 / 3 / 3;
@@ -1175,6 +1245,10 @@ body.js--scrolled{
       margin: 1.875rem 0 1rem auto;
       max-width: 100%;
     }
+    @media(max-width: 767px) {
+      margin: 1.875rem 0 2rem;
+      max-width: 100%;
+    }
   }
   &__cards{
     display: grid;
@@ -1182,6 +1256,9 @@ body.js--scrolled{
     align-items: flex-end;
     gap: 1.25rem;
     grid-area: 2 / 3 / 3 / 5;
+    @media(max-width: 767px) {
+      gap: 0.75rem;
+    }
   }
   &-card{
     display: flex;
@@ -1239,6 +1316,9 @@ body.js--scrolled{
     @media(max-width: 1280px) {
       font-size: 1rem;
     }
+    @media(max-width: 767px) {
+      font-size: 0.875rem;
+    }
   }
   &-card__title{
     font-weight: 400;
@@ -1253,6 +1333,9 @@ body.js--scrolled{
     @media(max-width: 1280px) {
       font-size: 1.125rem;
       -webkit-line-clamp: 2;
+    }
+    @media(max-width: 767px) {
+      font-size: 1rem;
     }
   }
   &-card:hover{
@@ -1321,6 +1404,7 @@ body.js--scrolled{
         position: static;
         margin-top: 1.25rem;
         padding: 0;
+        gap: 0.675rem;
       }
     }
     &__box:before {
@@ -1353,6 +1437,9 @@ body.js--scrolled{
         font-size: 1.125rem;
         max-width: 22.5rem;
       }
+      @media(max-width: 767px) {
+        font-size: 1rem;
+      }
     }
   }
   &__list{
@@ -1362,6 +1449,9 @@ body.js--scrolled{
     @media(max-width: 1280px) {
       display: flex;
       flex-direction: column;
+    }
+    @media(max-width: 767px) {
+      gap: 0.75rem;
     }
   }
   &-item{
@@ -1376,6 +1466,11 @@ body.js--scrolled{
       gap: 1rem;
       .paragraph.paragraph--sm{
         font-size: 1.125rem;
+      }
+    }
+    @media(max-width: 767px) {
+      .paragraph.paragraph--sm{
+        font-size: 1rem;
       }
     }
   }
@@ -1396,6 +1491,9 @@ body.js--scrolled{
     .heading{
       text-transform: none;
       font-weight: 500;
+    }
+    @media(max-width: 767px) {
+      gap: 1rem;
     }
   }
 }
@@ -1439,8 +1537,17 @@ body.js--scrolled{
     font-size: 1.25rem;
     color: #b7bdb7;
     margin-bottom: 1.875rem;
+    @media(max-width: 767px) {
+      font-size: 1rem;
+    }
   }
   &-slider-item__heading{
+    .heading{
+      text-transform: none;
+      @media(max-width: 767px) {
+        font-size: 1.5rem;
+      }
+    }
     margin-bottom: 1.5rem;
     @media(max-width: 1280px) {
       max-width: 30.3125rem;
@@ -1571,6 +1678,9 @@ body.js--scrolled{
     @media(max-width: 1280px) {
       font-size: 1.125rem;
     }
+    @media(max-width: 767px) {
+      font-size: 1rem;
+    }
   }
   .heading.heading--big{
     font-family: var(--second-family);
@@ -1579,7 +1689,8 @@ body.js--scrolled{
       font-size: 3.75rem;
     }
     @media(max-width: 767px) {
-      font-size: 2.625rem;
+      font-size: 2.75rem;
+      line-height: 102%;
     }
   }
   &__body{
@@ -1613,6 +1724,9 @@ body.js--scrolled{
       font-size: 1.125rem;
       max-width: 50rem;
     }
+    @media(max-width: 767px) {
+      font-size: 1rem;
+    }
   }
   &__footer{
     display: grid;
@@ -1630,12 +1744,16 @@ body.js--scrolled{
     @media(max-width: 767px) {
       display: flex;
       flex-direction: column;
+      gap: 2.5rem;
     }
   }
   &-nominal{
     display: flex;
     flex-direction: column;
     gap: 0.875rem;
+    @media(max-width: 767px) {
+      gap: 1.125rem;
+    }
   }
   &-nominal__heading{
     font-weight: 300;
@@ -1647,6 +1765,9 @@ body.js--scrolled{
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
+    @media(max-width: 767px) {
+      gap: 0.625rem;
+    }
     &-item{
       border: 1px solid #918068;
       border-radius: 2.5rem;
@@ -1678,6 +1799,9 @@ body.js--scrolled{
   }
   .button{
     margin-top: 0.625rem;
+    @media(max-width: 767px) {
+      margin-top: 0;
+    }
   }
 }
 .feedback{
@@ -2541,8 +2665,7 @@ body.js--scrolled{
     padding-bottom: 2.5rem;
   }
   @media(max-width: 767px) {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3.125rem;
   }
   &__inner{
     position: relative;
@@ -2574,6 +2697,9 @@ body.js--scrolled{
       gap: 1.875rem;
       width: 100%;
     }
+    @media(max-width: 767px) {
+      padding-top: 0;
+    }
   }
   &__col{
     display: flex;
@@ -2599,6 +2725,9 @@ body.js--scrolled{
     transition: .3s all;
     @media(max-width: 1280px) {
       font-size: 1.875rem;
+    }
+    @media(max-width: 767px) {
+      margin-bottom: 1.625rem;
     }
   }
   &__link-phone:hover{
@@ -2631,6 +2760,9 @@ body.js--scrolled{
     color: var(--color-text-light);
     @media(max-width: 1280px) {
       font-size: 1.125rem;
+    }
+    @media(max-width: 767px) {
+      font-size: 1rem;
     }
   }
   &__text.footer__text--color{
@@ -2728,6 +2860,10 @@ body.js--scrolled{
     }
     @media(max-width: 991px) {
       align-items: center;
+    }
+    @media(max-width: 767px) {
+      gap: 1.125rem;
+      margin-bottom: 3.125rem;
     }
   }
   &-item{

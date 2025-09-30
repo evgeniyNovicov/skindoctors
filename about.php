@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>EB-5 Diligent</title>
-    <meta name="description" content="EB-5 Diligent">
+    <title>Skin Doctors</title>
+    <meta name="description" content="Skin Doctors">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,42 +12,96 @@
 </head>
 <body>
 <?php include "inc/inc_header.php"; ?>
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs__inner">
+            <a href="/" class="breadcrumbs__link">Главная</a>
+            <div class="breadcrumbs__link">/</div>
+            <div class="breadcrumbs__text">О нас</div>
+        </div>
+    </div>
+</div>
 <div class="main">
-    <section class="section section-secondary">
+    <!--  SECTION REASON START  -->
+    <?php include "inc/inc_section-reason.php"; ?>
+    <section class="section">
         <div class="container">
-            <div class="breadcrumbs">
-                <a href="/" class="breadcrumbs__link">Главная</a>
-                <div class="breadcrumbs__link">→</div>
-                <div class="breadcrumbs__text">О нас</div>
-            </div>
-            <div class="about">
-                <div class="about__body">
-                    <div class="about__img-wrapper" data-animation="fade">
-                        <img src="./images/hero-image.png" alt="" class="about__img">
-                    </div>
-                    <div class="about__info" data-animation="slide">
-                        <h1 class="heading about__heading">Основатель компании «ЕВ-5 Дилиджент» эксперт по инвестиционным визам EB-5</h1>
-                        <h2 class="about__name">Никита Федулов</h2>
-                        <ul class="about__list">
-                            <li class="about-item">
-                                <h3 class="about-item__heading">Образование</h3>
-                                <p class="about-item__paragraph">Я выпускник Санкт-Петербургского «ЛЭТИ». Мой профессиональный путь включает работу в международных финтех-компаниях, консалтинге, в девелоперской и производственной сферах. Такой разносторонний опыт позволяет мне всесторонне оценивать инвестиционные проекты.</p>
-                            </li>
-                            <li class="about-item">
-                                <h3 class="about-item__heading">Системный подход</h3>
-                                <p class="about-item__paragraph">За годы работы я участвовал во внедрении международных финансовых стандартов IFRS, GAAP и HGB, анализе рисков и подготовке отчетности для иностранных клиентов. Работа с зарубежными компаниями и успешное управление сложными проектами помогло мне выстроить системный подход, эффективно организовывать бизнес-процессы и доводить их до успешного результата. </p>
-                            </li>
-                            <li class="about-item">
-                                <h3 class="about-item__heading">Частные инвестиции</h3>
-                                <p class="about-item__paragraph">С 2015 года я активно занимаюсь частными инвестициями, и именно тогда я заинтересовался программой EB-5. Знание механизмов и структур финансирования проектов, и понимание управления рисками помогают мне анализировать проекты предлагать клиентам решения с наименьшим риском.</p>
-                            </li>
-                        </ul>
+            <div class="equipment">
+                <div class="equipment__body">
+                    <div class="magazine-slider swiper" data-name="equipment-slider" data-animation="slide">
+                        <div class="magazine-slider__list swiper-wrapper">
+                            <div class="magazine-slider-item swiper-slide">
+                                <div class="magazine-slider-item__picture">
+                                    <img src="./images/slider-1.webp" alt="photo" class="magazine-slider-item__img">
+                                </div>
+                                <div class="magazine-slider-item__body">
+                                    <div class="magazine-slider-item__date">01.08.2025</div>
+                                    <div class="magazine-slider-item__heading">
+                                        <h3 class="heading heading--md">Мы думаем о Вашей безопасности</h3>
+                                    </div>
+                                    <p class="paragraph paragraph--sm">Мы постоянно думаем о Вашей безопасности, поэтому выбираем лучшие препараты и оборудование для конкретных задач и для каждого пациента индивидуально. Нет шаблонов, только индивидуальный подход.</p>
+                                    <a href="#" class="magazine-slider-item__link">Читать полностью</a>
+                                </div>
+                            </div>
+                            <div class="magazine-slider-item swiper-slide">
+                                <div class="magazine-slider-item__picture">
+                                    <img src="./images/slider-2.webp" alt="photo" class="magazine-slider-item__img">
+                                </div>
+                                <div class="magazine-slider-item__body">
+                                    <div class="magazine-slider-item__date">01.08.2025</div>
+                                    <div class="magazine-slider-item__heading">
+                                        <h3 class="heading heading--md">Мы думаем о Вашей безопасности</h3>
+                                    </div>
+                                    <p class="paragraph paragraph--sm">Мы постоянно думаем о Вашей безопасности, поэтому выбираем лучшие препараты и оборудование для конкретных задач и для каждого пациента индивидуально. Нет шаблонов, только индивидуальный подход.</p>
+                                    <a href="#" class="magazine-slider-item__link">Читать полностью</a>
+                                </div>
+                            </div>
+                            <div class="magazine-slider-item swiper-slide">
+                                <div class="magazine-slider-item__picture">
+                                    <img src="./images/slider-2.webp" alt="photo" class="magazine-slider-item__img">
+                                </div>
+                                <div class="magazine-slider-item__body">
+                                    <div class="magazine-slider-item__date">01.08.2025</div>
+                                    <div class="magazine-slider-item__heading">
+                                        <h3 class="heading heading--md">Мы думаем о Вашей безопасности</h3>
+                                    </div>
+                                    <p class="paragraph paragraph--sm">Мы постоянно думаем о Вашей безопасности, поэтому выбираем лучшие препараты и оборудование для конкретных задач и для каждого пациента индивидуально. Нет шаблонов, только индивидуальный подход.</p>
+                                    <a href="#" class="magazine-slider-item__link">Читать полностью</a>
+                                </div>
+                            </div>
+                            <div class="magazine-slider-item swiper-slide">
+                                <div class="magazine-slider-item__picture">
+                                    <img src="./images/slider-2.webp" alt="photo" class="magazine-slider-item__img">
+                                </div>
+                                <div class="magazine-slider-item__body">
+                                    <div class="magazine-slider-item__date">01.08.2025</div>
+                                    <div class="magazine-slider-item__heading">
+                                        <h3 class="heading heading--md">Мы думаем о Вашей безопасности</h3>
+                                    </div>
+                                    <p class="paragraph paragraph--sm">Мы постоянно думаем о Вашей безопасности, поэтому выбираем лучшие препараты и оборудование для конкретных задач и для каждого пациента индивидуально. Нет шаблонов, только индивидуальный подход.</p>
+                                    <a href="#" class="magazine-slider-item__link">Читать полностью</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="magazine-slider__pagination">
+                            <div class="magazine-slider__navigation">
+                                <button class="magazine-slider__button magazine-slider__button--prev">
+                                    Предыдущая
+                                </button>
+                                <div class="pagination__brackets">«</div>
+                                <div class="magazine-slider__pagination-container swiper-pagination"></div>
+                                <div class="pagination__brackets pagination__brackets--mar">»</div>
+                                <button class="magazine-slider__button magazine-slider__button--next">
+                                    Следующая
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <?php include "inc/inc_contact.php"; ?>
         </div>
     </section>
+    <!--  SECTION REASON END  -->
 </div>
 <?php include "inc/inc_footer.php"; ?>
 <?php include "inc/inc_popup.php"; ?>
